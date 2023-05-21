@@ -50,7 +50,7 @@ npm start
 ### libraries
 | library name       	| Version        	| Description                                                                                                                                                                                                       	|
 |--------------------	|----------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| npm                	| 9.5.1          	| The world's largest software registry, <br>used here to download and run package                                                                                                                                  	|
+| [npm](https://www.npmjs.com/)                	| 9.5.1          	| The world's largest software registry, <br>used here to download and run package                                                                                                                                  	|
 | node.js            	| 18.16.0        	| Enables the creation of scalable <br>and quick backend RESTful APIs                                                                                                                                               	|
 | javascript         	| V8 11.3.244.11 	| The language used to create the webapp                                                                                                                                                                            	|
 | React              	| 18.2.0         	| JavaScript library for creating user-<br>interface                                                                                                                                                                	|
@@ -62,12 +62,12 @@ npm start
 | speech-commands    	| 0.5.4          	| The Speech Command Recognizer is a JavaScript version <br>from tensorflow that enables recognition of spoken commands.<br>To develop ML models in JavaScript, and use ML directly<br>in the browser or in Node.js 	|
 | mui/icons-material 	| 5.11.16        	| Provides the Google Material Icons <br>converted to SvgIcon components                                                                                                                                            	|
 | mui/material       	| 5.13.0         	| Material UI is one of the popular React UI frameworks                                                                                                                                                             	|
-|                    	|                	|                                                                                                                                                                                                                   	|
-|                    	|                	|                                                                                                                                                                                                                   	|
-|                    	|                	|                                                                                                                                                                                                                   	|
-|                    	|                	|                                                                                                                                                                                                                   	|
-|                    	|                	|                                                                                                                                                                                                                   	|
 ### Development Tools
+- IDE: Visual Studio Code
+- Speech Recognition Model : Tensorflow.js model
+- UI Framework : REACT X Material UI
+- Design : adobe XD
+- Screen Reader : [chrome extension](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn)
 ## A Guide to Installation and Use
 (run and build)
 ## Known bugs and any bug fixes
