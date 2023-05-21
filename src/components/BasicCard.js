@@ -1,16 +1,16 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 // checkbox stuff
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from '@mui/icons-material/Delete';
-import { Container, Stack } from '@mui/material';
+import {  Stack } from '@mui/material';
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Grid from '@mui/material/Grid';
-import {useState, useEffect} from "react";
+import {useEffect} from "react";
+
 
 
 export default function BasicCard({action, todos, setTodos, filteredTodo}) {
@@ -47,7 +47,7 @@ export default function BasicCard({action, todos, setTodos, filteredTodo}) {
         <Card ariab-label="card-task" sx={{ maxWidth:'500px', borderRadius:4, width:'auto', margin:'auto',boxShadow: 5,padding:'10px' }}>
           <CardContent>
             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-              Wednesday, 22 Nov
+            {new Date().toLocaleString() + ''}
             </Typography>
               <Grid container columns={12} alignItems="center">
                 <Grid item lg={2} xs={3}>
