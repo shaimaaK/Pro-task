@@ -8,7 +8,7 @@
 
 ## Demo
 A live version of the WebApp is deployed on Netlify  :  https://pro-task-sk.netlify.app
-![image](https://github.com/shaimaaK/Pro-task/blob/main/images/pro-task%20app%20banner.png)
+![image](https://github.com/shaimaaK/Pro-task/blob/main/images/pro-task%20app%20banner.png?raw=true)
 
 
 ## Table of contents
