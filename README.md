@@ -23,7 +23,7 @@ The application provides voice commands to control the stack of tasks by that is
 ) and listens for the word **DO** followed by the command keyword:<br>
 :x: **Zero** :x: : Delete the top task of the stack <br>
 ✅ **One** ✅: change the status of the top task of the stack to complete/uncomplete <br>
-:round_pushpin: NOTE : the Voice recognition machine stops listening after `10 seconds` of silence
+:round_pushpin: NOTE : the Voice recognition machine stops listening after `10 seconds` of silence. The mic icon 🎤 indicate the status of mic whether it is on (🔊) or off (🔇)
 
 2. **Responsive** <br>
 The Web App has a responsive design and adapts to all devices screen sizes, tested for variety of screen sizes. It independent of the device operating system and screen size. Refer to [images folder](https://github.com/shaimaaK/Pro-task/tree/main/images) to view the application on different devices.
