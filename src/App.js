@@ -4,7 +4,10 @@ import React , {useState, useEffect} from 'react';
 import TodoList from "./components/TodoList"
 import { Container } from '@mui/material';
 import MicNoneOutlinedIcon from '@mui/icons-material/MicNoneOutlined';
+import MicOffIcon from '@mui/icons-material/MicOff';
+import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
 import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
 //import tensorflow dependencies
 import * as speech from "@tensorflow-models/speech-commands"
 import * as tf from "@tensorflow/tfjs"
@@ -19,6 +22,7 @@ function App() {
   const [model, setModel]= useState(null)
   const [action, setAction]= useState(null)
   const [labels, setLabels]= useState(null)//command
+  const [mic, setMic]= useState(false)//command
 
   //create the Recognizer
   const loadModel = async()=>{
@@ -37,11 +41,14 @@ function App() {
   }
   const recognizeCommands=async()=>{
     console.log('Listening for commands')
+    setMic(true)
     model.listen(results=>{
       console.log(labels[argMax(Object.values(results.scores))])
       setAction(labels[argMax(Object.values(results.scores))])
     }, {includeSpectrogram:true, probabilityThreshold:0.9})
     setTimeout(()=> model.stopListening(), 10e3)
+    setTimeout(()=> setMic(false), 10e3)
+
   }
   return (
     <div className="App"  style={{'backgroundColor':'#85FFBD',
@@ -52,7 +59,8 @@ function App() {
           <Alert sx={{fontSize:'1rem',maxWidth:'500px'}} severity="info">Tick the TOP note completed  :- click on the speak button and say "do one"</Alert>
         </Stack>
         <Container >
-          <Button variant="contained" color="success" aria-label="speak" onClick={recognizeCommands} endIcon={<MicNoneOutlinedIcon />}>speak</Button>
+          <Button variant="contained" color="success" aria-label="speak" onClick={recognizeCommands} endIcon={<RecordVoiceOverIcon />}>speak</Button>
+          {mic?<IconButton  color="error" aria-label="recording" ><MicNoneOutlinedIcon /></IconButton>:<IconButton  color="error" aria-label="not recording" ><MicOffIcon /></IconButton>}
           {action ?<div>{action}</div>:<div>No Action Detected</div>}
           </Container>
           <Container sx={{ paddingBottom: 2 }}>
