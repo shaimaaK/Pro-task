@@ -37,7 +37,7 @@ Status :
 The tasks can be written in any language.
 7. **Accessability Features** <br>
 The design is implemented  in minimilist and modern theme with all types of users in mind (age, experience, cognitive skills, disabilities). All items have a descriptive alternative text and tested using the [screen reader extension of chrome browser](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn)
-9. **Easy to login**
+9. **Easy to login**<br>
 For easy access of the application and seemless experience, you can directly access your tasks and make changes that are associated to each user without the need for login.
 ## Technologies
 The REACT Application is created using the npx command `npx create-react-app app-name`. According to the [official react documentation](https://legacy.reactjs.org/docs/create-a-new-react-app.html#:~:text=Create%20React%20App,-Create%20React%20App&text=npx%20on%20the%20first%20line,with%20any%20backend%20you%20want), it sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production. You’ll need to have Node >= 14.0.0 and npm >= 5.6 on your machine. To create a project, run:
