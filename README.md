@@ -15,7 +15,7 @@ A live version of the WebApp is deployed on Netlify  :  https://pro-task-sk.netl
 * [Features](#features)
 * [Technologies](#technologies)
 * [A Guide to Installation and Use](#a-guide-to-installation-and-use)
-* [Known Bugs Fixes](#a-guide-to-installation-and-use)
+* [Known Bugs Fixes](#known-bugs-and-fixes)
 
 ## Features
 1. **AI command control** <br>
